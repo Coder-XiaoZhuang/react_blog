@@ -1,0 +1,29 @@
+.header {
+  background-color: pink;
+  padding: .4rem;
+  overflow: hidden;
+  height: 2.8rem;
+  border-bottom:1px solid #ccc;
+}
+.headerLogo {
+  font-size: 1.4rem;
+  text-align: left;
+  background-image: linear-gradient(to right, red, orange, gold, green, cyan, dodgerblue, mediumpurple);
+  color: transparent;
+  background-clip: text;
+  animation: slide 20s linear infinite;
+}
+@keyframes slide {
+  form {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100vw;
+  }
+}
+.headerTxt {
+  font-size: 0.6rem;
+  color: rgba(0, 0, 0, 0.65);
+  display: inline-block;
+  padding-left: 0.3rem;
+}
