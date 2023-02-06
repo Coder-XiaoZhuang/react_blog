@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
+    "@babel/eslint-parser": "^7.19.1",
     "@next/font": "13.1.6",
     "antd": "^5.1.6",
     "babel-plugin-import": "^1.13.6",
