@@ -37,8 +37,8 @@ const Header = () => {
   };
   return (
     <div className={headerStyles.header}>
-      <Row type="flex" justify="center">
-          <Col xs={24} sm={24} md={10} lg={6} xl={6}>
+      <Row type="flex" justify="center" align="middle">
+          <Col xs={22} sm={22} md={10} lg={8} xl={8}>
               <span className={headerStyles.headerLogo}>好好</span>
               <span className={headerStyles.headerTxt}>
                 <TypeIt getBeforeInit={(instance) => {
@@ -50,12 +50,12 @@ const Header = () => {
               </span>
           </Col>
 
-          <Col className={headerStyles.memuDiv} xs={0} sm={0} md={14} lg={12} xl={10}>
-              <Menu mode="horizontal" items={items} onClick={onClick} selectedKeys={[current]} style={{ backgroundColor: 'pink'}}></Menu>
+          <Col xs={2} sm={2} md={14} lg={12} xl={10}>
+              <Menu mode="horizontal" items={items} onClick={onClick} selectedKeys={[current]} style={{ backgroundColor: 'pink', color: '#fff'}}></Menu>
           </Col>
       </Row>
     </div>
   )
 }
 
-export default Header
+export default Header;

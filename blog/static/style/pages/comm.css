@@ -7,7 +7,7 @@ body{
   border-radius: .3rem;
   border-bottom:1px solid #eee;
 }
-.comm-right{
+.comm-box{
   background-color: #FFF;
   margin-left: .5rem;
   padding:.3rem;
@@ -17,4 +17,7 @@ body{
 }
 .comm-main{
   margin-top: .5rem;
+}
+.ant-menu-item-selected, .ant-menu-submenu-selected .ant-menu-submenu-title {
+  color: black !important;
 }

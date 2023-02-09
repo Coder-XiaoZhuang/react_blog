@@ -1,13 +1,8 @@
 {
-  "env": {
-    "node": true,
-    "commonjs": true
-  },
   "extends": ["plugin:@next/next/recommended"],
   "parserOptions": {
     "ecmaVersion": 7,
-    "sourceType": "module",
-    "parser": "@babel/eslint-parser",
-    "requireConfigFile": false
-  }
+    "sourceType": "module"
+  },
+  "parser": "@babel/eslint-parser"
 }
