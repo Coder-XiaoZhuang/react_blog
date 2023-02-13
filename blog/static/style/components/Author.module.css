@@ -12,11 +12,29 @@
   color: #999;
 }
 .authorName {
-  font-size: .8rem;
+  font-size: 19px;
   color: pink;
+  font-weight: 600;
+}
+@keyframes smoky {
+  60% {
+    text-shadow: 0 0 40px whitesmoke;
+  }
+  to {
+    transform:
+      translate3d(15rem,-8rem,0)
+      rotate(-40deg)
+      skewX(70deg)
+      scale(1.5);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+.authorSign {
+  animation: smoky 3s infinite;
 }
 .account {
-  background-color: #999;
+  background-color: pink;
   margin-left: .5rem;
   margin-right: .5rem;
 }

@@ -14,9 +14,9 @@ const Author = () => {
             <div className={ authorStyles.authorIntroduction }>
                 <div>
                     <div className={ authorStyles.authorName }>好好</div>
-                    <div className={ authorStyles.authorSign }>一个专心于前端的程序员</div>
+                    <div className={ authorStyles.authorSign }>勇敢，迎难而上。</div>
                 </div>
-                <Divider>社交账号</Divider>
+                <Divider style={{ color: 'pink'  }}>社交账号</Divider>
                 <Avatar size={28} icon={ <GithubOutlined /> } className={ authorStyles.account }  />
                 <Avatar size={28} icon={ <QqOutlined /> }  className={ authorStyles.account } />
                 <Avatar size={28} icon={ <WechatOutlined /> }  className={ authorStyles.account }  />
