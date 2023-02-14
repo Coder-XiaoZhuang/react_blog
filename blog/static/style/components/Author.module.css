@@ -8,6 +8,7 @@
 
 }
 .authorIntroduction {
+  position: relative;
   font-size:.8rem;
   color: #999;
 }
@@ -16,25 +17,32 @@
   color: pink;
   font-weight: 600;
 }
-@keyframes smoky {
-  60% {
-    text-shadow: 0 0 40px whitesmoke;
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80%{
+    transform:translateY(0);
   }
-  to {
-    transform:
-      translate3d(15rem,-8rem,0)
-      rotate(-40deg)
-      skewX(70deg)
-      scale(1.5);
-    text-shadow: 0 0 20px whitesmoke;
-    opacity: 0;
+  40%{
+    transform:translateY(-15px);
+  }
+  60%{
+    transform:translateY(-10px);
   }
 }
 .authorSign {
-  animation: smoky 3s infinite;
+  animation: bounce 2s infinite;
 }
 .account {
   background-color: pink;
   margin-left: .5rem;
   margin-right: .5rem;
+}
+.authorQq {
+  position: absolute;
+  top: -10px;
+  left: 26%;
+}
+.authorWechat {
+  position: relative;
+  top: -10px;
+  left: 26%;
 }
