@@ -6,8 +6,8 @@ import {
     WechatOutlined
   } from '@ant-design/icons';
 import authorStyles from '../static/style/components/Author.module.css';
-import qqUrl from "../images/qq.png";
-import wechatUrl from "../images/wechat.jpg";
+import qqUrl from "../static/images/qq.png";
+import wechatUrl from "../static/images/wechat.png";
 
 const Author = () => {
     let [state, setState] = useState({
@@ -38,16 +38,16 @@ const Author = () => {
                     onMouseLeave={ () => setState({ isShowQq: false, isShowWechat: false }) }
                 ></Avatar>
                 {
-                    state.isShowQq ? <div className='authorQq'>  
+                    state.isShowQq ? <div className={ authorStyles.authorQq }>  
                         <div>
-                            <img src={ qqUrl } alt="好好的QQ"/>
+                            <img src={ qqUrl.src } style={{ width: 100 }} alt="好好的QQ"/>
                         </div> 
                     </div> : null  
                 }
                 {
-                    state.isShowWechat ? <div className='authorWechat'>     
+                    state.isShowWechat ? <div className={ authorStyles.authorWechat }>     
                     <div>   
-                        <img src={ wechatUrl } alt="好好的微信"/> 
+                        <img src={ wechatUrl.src } style={{ width: 100 }} alt="好好的微信"/> 
                     </div> 
                 </div> : null
                 }
