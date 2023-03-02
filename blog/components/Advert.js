@@ -1,7 +1,15 @@
 import { Divider } from 'antd';
+import axios from "axios";
 import advertStyles from "../static/style/components/Advert.module.css";
 
 const Advert = () => {
+  axios({
+    type:"get",
+    url:"/api/getip.aspx",
+    success:(data)=>{
+      console.log(data)
+    }
+  })
   return (
     <div className={ `comm-box ${advertStyles.advertDiv}` }>
       <Divider style={{ color: 'pink'  }}>
