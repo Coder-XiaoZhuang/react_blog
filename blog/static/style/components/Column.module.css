@@ -1,10 +1,7 @@
-.advertDiv {
+.columnDiv {
   margin-top: 10px;
   padding: 15px;
   color: #999;
   font-size: 14px;
   font-family: '楷体';
-}
-.advertIP, .advertAddress, .advertNotice {
-  margin-bottom: 10px;
 }

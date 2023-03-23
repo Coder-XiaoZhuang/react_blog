@@ -35,7 +35,7 @@ const Advert = () => {
         </div>
         <div className={ advertStyles.advertNotice }>
           您好，现在是：<span style={{ color: 'pink' }}>{ state.currentTime }</span>
-          <div>感恩相遇，祝您生活愉快。</div>
+          <div style={{ marginTop: '10px' }}>感恩相遇，祝您生活愉快。</div>
         </div>
       </div>
     </div>

@@ -10,6 +10,7 @@ import IndexStyles from "../static/style/pages/Index.module.css";
 import Header from '../components/Header';
 import Author from '../components/Author';
 import Advert from "../components/Advert";
+import Column from "../components/Column";
 
 const Home = () => {
   const [ mylist , setMylist ] = useState(
@@ -51,6 +52,7 @@ const Home = () => {
         <Col className="comm-right" xs={0} sm={0} md={7} lg={5} xl={4}>
             <Author></Author>
             <Advert></Advert>
+            <Column></Column>
         </Col>
       </Row>
     </>
